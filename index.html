@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./source/css/style.css" />
+   <title>Valid credit card</title>
+   <link rel="stylesheet" href="./source/font-awesome-4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+   <div class="wrapper">
+      <main>
+         <img class="card-bg" src="./source/images/credit-card.png" alt="card" />
+         <h2 class="card-name">Bank name</h2>
+         <img class="sign" src="./source/images/sign.png" alt="sign" />
+         <form id="form">
+            <div class="form-control">
+               <input id="card" type="number" title="Use only numbers" placeholder="0000 0000 0000 0000" />
+               <i class="fa fa-exclamation-circle"></i>
+               <small>Error</small>
+               <button type="submit" class="btn">Check</button>
+            </div>
+         </form>
+      </main>
+      <div id="manager">
+         <p id="answer"></p>
+         <img src="source/images/manager.jpg" alt="manager-img" />
+      </div>
+   </div>
+   <script src="./source/js/script.js"></script>
+</body>
+
+</html>

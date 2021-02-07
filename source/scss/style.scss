@@ -1,0 +1,148 @@
+body,
+html {
+   width: 100%;
+   height: 100%;
+}
+
+body {
+   background-color: rgb(250, 240, 240);
+   padding: 30px;
+}
+* {
+   border: 0;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.wrapper {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+main {
+   background-color: rgb(131, 131, 128);
+   box-shadow: 0 0 10px rgb(233, 232, 219);
+   width: 460px;
+   height: 270px;
+   border-radius: 20px;
+   position: relative;
+}
+.card-bg {
+   position: absolute;
+   top: -170px;
+   left: 15px;
+   z-index: -1;
+}
+
+.card-name {
+   display: flex;
+   justify-content: flex-end;
+   padding: 20px 30px;
+   text-transform: capitalize;
+   letter-spacing: 1px;
+}
+
+.sign {
+   width: 50px;
+   height: 35px;
+   border-radius: 5px;
+   margin: 0 0 10px 40px;
+}
+.form-control {
+   position: relative;
+   width: 70%;
+   margin: 0 auto;
+   input {
+      width: 100%;
+      height: 30px;
+      background-color: rgb(228, 228, 222);
+      border-radius: 5px;
+      outline: none;
+      text-align: center;
+      font-size: 18px;
+      letter-spacing: 1px;
+   }
+   .fa {
+      position: absolute;
+      top: 7px;
+      right: 8px;
+   }
+   small {
+      position: absolute;
+      top: 35px;
+      left: 10px;
+      color: rgb(223, 6, 6);
+      visibility: hidden;
+      letter-spacing: 1px;
+   }
+   .btn {
+      width: 140px;
+      height: 30px;
+      background-color: rgb(31, 27, 27);
+      border-radius: 5px;
+      color: white;
+      font-size: 18px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin: 40px 0 0 90px;
+      cursor: pointer;
+      transition: 0.5s ease-out;
+      &:hover {
+         background-color: rgb(68, 60, 60);
+      }
+   }
+}
+
+.fa-exclamation-circle {
+   color: red;
+   visibility: hidden;
+}
+
+.form-control.error {
+   .fa-exclamation-circle {
+      visibility: visible;
+   }
+   small {
+      visibility: visible;
+   }
+   input {
+      border: 1.5px solid red;
+   }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+input[type="number"] {
+   -moz-appearance: textfield;
+}
+
+#manager {
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   display: none;
+   img {
+      width: 200px;
+      height: 310px;
+   }
+   #answer {
+      width: 230px;
+      height: 70px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      transform: translate(-170px, 70px);
+   }
+}
+.check {
+   border: 2px solid rgb(165, 12, 12);
+}
